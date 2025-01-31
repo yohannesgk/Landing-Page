@@ -2,7 +2,11 @@
 
 # LANDING PAGE FOR MY MULTI SACCO MANAGMENT SOFTWARE
 
-** To run the page follow these steps **
+![sacco_landing_1](https://github.com/user-attachments/assets/b1b1f096-900e-45ce-9425-423d069d2ef2)
+
+
+![sacco_landing_2](https://github.com/user-attachments/assets/b4479804-4031-4e93-bfe7-c549cd64989e)
+
 
 Follow these steps:
 
