@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,8 +20,10 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
-            <Button variant="outline" size="lg">
-              Learn More
+            <Button asChild variant="outline" size="lg">
+              <Link to="/learn-more">
+                Learn More
+              </Link>
             </Button>
           </div>
         </div>
