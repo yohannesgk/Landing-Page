@@ -25,16 +25,16 @@ const Navbar = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-48 bg-white">
               <DropdownMenuItem>
-                <Link to="/blog" className="w-full">Blog</Link>
+                <a href="#blog" className="w-full">Blog</a>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/documentation" className="w-full">Documentation</Link>
+                <a href="#documentation" className="w-full">Documentation</a>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/privacy" className="w-full">Privacy Policy</Link>
+                <a href="#privacy" className="w-full">Privacy Policy</a>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/terms" className="w-full">Terms of Service</Link>
+                <a href="#terms" className="w-full">Terms of Service</a>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
