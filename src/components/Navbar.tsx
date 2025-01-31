@@ -4,8 +4,9 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
+import { BookOpen, Shield, FileText, MessageSquare, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -23,18 +24,31 @@ const Navbar = () => {
                 Resources <ChevronDown className="h-4 w-4" />
               </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-48 bg-white">
-              <DropdownMenuItem>
-                <a href="#blog" className="w-full">Blog</a>
+            <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuItem asChild>
+                <Link to="/documentation" className="flex items-center">
+                  <BookOpen className="mr-2 h-4 w-4" />
+                  <span>Documentation</span>
+                </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem>
-                <a href="#documentation" className="w-full">Documentation</a>
+              <DropdownMenuItem asChild>
+                <Link to="/blog" className="flex items-center">
+                  <MessageSquare className="mr-2 h-4 w-4" />
+                  <span>Blog</span>
+                </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem>
-                <a href="#privacy" className="w-full">Privacy Policy</a>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild>
+                <Link to="/privacy" className="flex items-center">
+                  <Shield className="mr-2 h-4 w-4" />
+                  <span>Privacy Policy</span>
+                </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem>
-                <a href="#terms" className="w-full">Terms of Service</a>
+              <DropdownMenuItem asChild>
+                <Link to="/terms" className="flex items-center">
+                  <FileText className="mr-2 h-4 w-4" />
+                  <span>Terms of Service</span>
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
